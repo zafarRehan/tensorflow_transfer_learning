@@ -97,9 +97,9 @@ Note: The value of num_classes must be equal to number of classes / different ob
 The annotation files can be different for different datasets or your own created annotation.
 Let's compare our annotation file for the 2 datasets: </br>
 
-<table border=0>
+<table  border-collapse=collapse>
 <tr>
-<td width=400 border=none>
+<td width=400>
 <b>1. Licence Plate Annotation File</b>
 
     <annotation>
@@ -126,7 +126,7 @@ Let's compare our annotation file for the 2 datasets: </br>
         </object>
     </annotation>      
 </td>   
-<td width=400 border=none>
+<td width=400>
 <b>2. Satellite Car Pool Annotation File</b></br>
 
     <?xml version="1.0"?>
