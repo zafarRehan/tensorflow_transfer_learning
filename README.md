@@ -80,7 +80,7 @@ After:
 </tr>
 </table>
 Note: The number of item should match number of classes in your dataset with proper name. </br>
-### pipeline.config</br>
+### pipeline.config
 at line 3:</br>
 change
 
