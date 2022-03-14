@@ -82,12 +82,20 @@ After:
 Note: The number of item should match number of classes in your dataset with proper name. </br>
 <h3>pipeline.config </h3>
 at line 3:</br>
+<table>
+<tr>
+<td>
 change
 
     num_classes: 1
+</td>
+<td>
 to
 
     num_classes: 2
+</td>
+</tr>
+</table>
     
 Note: The value of num_classes must be equal to number of classes / different objects to be detected in your dataset. (Here: 'Car', 'Pool').</br>
 
@@ -97,7 +105,7 @@ Note: The value of num_classes must be equal to number of classes / different ob
 The annotation files can be different for different datasets or your own created annotation.
 Let's compare our annotation file for the 2 datasets: </br>
 
-<table  border-collapse=collapse>
+<table>
 <tr>
 <td width=400>
 <b>1. Licence Plate Annotation File</b>
