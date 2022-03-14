@@ -35,4 +35,7 @@ You can create your own dataset for object detection for which you must have: </
 ## Changes to be made for Custom Training
 As the problem changes so does varoius other parameters.</br>
 
-In order to 
+In order to demonstrate the changes I will take another example to walk you through the changes to be made and the challenges that can be faced while doing them
+
+<b>Dataset Used : </b> https://www.kaggle.com/kbhartiya83/swimming-pool-and-car-detection
+
