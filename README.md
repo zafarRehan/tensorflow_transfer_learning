@@ -245,9 +245,11 @@ Added dict at line: 32 ```index_to_label =    {1: 'car', 2:'pool'}``` because un
 
 Changed line: 66 
 from 
-```classes_text.append(row['class'].encode('utf8'))```
+    
+    classes_text.append(row['class'].encode('utf8'))
 to
-```classes_text.append(index_to_label[row['class']].encode('utf8'))```
+
+    classes_text.append(index_to_label[row['class']].encode('utf8'))
 
 for the same reason
 
