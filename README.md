@@ -235,9 +235,9 @@ Basically ```   int(member[5][1].text)  ``` is changed to ```   int(float(member
 The reason is: </br></br>
 
 <ul>
-<li>In licence_detection annotation file the "<bndbox>" element was present at <b><i>sixth</i></b> position inside "<object>" element, whereas in the other annotation file it is present in <b><i>second</i></b> position.</li>
+<li>In licence_detection annotation file the [bndbox] element was present at <b><i>sixth</i></b> position inside [object] element, whereas in the other annotation file it is present in <b><i>second</i></b> position.</li>
     
-<li>In licence_detection annotation file the contents of "<bndbox>" element were of <b><i>int</i></b> type whereas in the other one it is of <b><i>float</i></b> type.</li>
+<li>In licence_detection annotation file the contents of [bndbox] element were of <b><i>int</i></b> type whereas in the other one it is of <b><i>float</i></b> type.</li>
 </ul>
 </br></br>
     
