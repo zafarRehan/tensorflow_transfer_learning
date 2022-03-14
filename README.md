@@ -175,9 +175,6 @@ Well there is difference right? </br>
 To handle these changes following code were changed: </br>
 1. In the notebook this code block was changed
 
-<table>
-<tr>
-<td width=400>
 <b>From</b>
 
     import os
@@ -204,8 +201,7 @@ To handle these changes following code were changed: </br>
         column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
         xml_df = pd.DataFrame(xml_list, columns=column_name)
         return xml_df     
-</td>   
-<td width=400>
+
 <b>To</b>
 
     import os
@@ -232,7 +228,5 @@ To handle these changes following code were changed: </br>
         column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
         xml_df = pd.DataFrame(xml_list, columns=column_name)
         return xml_df
-</td>
-</tr>
-</table>
+
 
