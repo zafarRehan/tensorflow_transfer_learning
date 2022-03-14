@@ -89,67 +89,67 @@ Let's compare our annotation file for the 2 datasets: </br>
 <table>
     <tr>
         <td>
-<b>1. Licence Plate Annotation File</b>
-   
-    <annotation>
-        <folder>images</folder>
-        <filename>Cars2.png</filename>
-        <size>
-            <width>400</width>
-            <height>400</height>
-            <depth>3</depth>
-        </size>
-        <segmented>0</segmented>
-        <object>
-            <name>licence</name>
-            <pose>Unspecified</pose>
-            <truncated>0</truncated>
-            <occluded>0</occluded>
-            <difficult>0</difficult>
-            <bndbox>
-                <xmin>229</xmin>
-                <ymin>176</ymin>
-                <xmax>270</xmax>
-                <ymax>193</ymax>
-            </bndbox>
-        </object>
-    </annotation>      
-    </td>   
-    <td>
-<b>2. Satellite Car Pool Dataset</b></br>
+            <b>1. Licence Plate Annotation File</b>
 
-    <?xml version="1.0"?>
-    <annotation>
-        <filename>000000001.jpg</filename>
-        <source>
-            <annotation>ArcGIS Pro 2.1</annotation>
-        </source>
-        <size>
-            <width>224</width>
-            <height>224</height>
-            <depth>3</depth>
-        </size>
-        <object>
-            <name>1</name>
-            <bndbox>
-                <xmin>58.47</xmin>
-                <ymin>40.31</ymin>
-                <xmax>69.58</xmax>
-                <ymax>51.43</ymax>
-            </bndbox>
-        </object>
-        <object>
-            <name>1</name>
-            <bndbox>
-                <xmin>10.32</xmin>
-                <ymin>93.68</ymin>
-                <xmax>21.43</xmax>
-                <ymax>104.80</ymax>
-            </bndbox>
-        </object>
-    </annotation>
-</td>
-</tr>
+                <annotation>
+                    <folder>images</folder>
+                    <filename>Cars2.png</filename>
+                    <size>
+                        <width>400</width>
+                        <height>400</height>
+                        <depth>3</depth>
+                    </size>
+                    <segmented>0</segmented>
+                    <object>
+                        <name>licence</name>
+                        <pose>Unspecified</pose>
+                        <truncated>0</truncated>
+                        <occluded>0</occluded>
+                        <difficult>0</difficult>
+                        <bndbox>
+                            <xmin>229</xmin>
+                            <ymin>176</ymin>
+                            <xmax>270</xmax>
+                            <ymax>193</ymax>
+                        </bndbox>
+                    </object>
+                </annotation>      
+        </td>   
+        <td>
+            <b>2. Satellite Car Pool Dataset</b></br>
+
+                <?xml version="1.0"?>
+                <annotation>
+                    <filename>000000001.jpg</filename>
+                    <source>
+                        <annotation>ArcGIS Pro 2.1</annotation>
+                    </source>
+                    <size>
+                        <width>224</width>
+                        <height>224</height>
+                        <depth>3</depth>
+                    </size>
+                    <object>
+                        <name>1</name>
+                        <bndbox>
+                            <xmin>58.47</xmin>
+                            <ymin>40.31</ymin>
+                            <xmax>69.58</xmax>
+                            <ymax>51.43</ymax>
+                        </bndbox>
+                    </object>
+                    <object>
+                        <name>1</name>
+                        <bndbox>
+                            <xmin>10.32</xmin>
+                            <ymin>93.68</ymin>
+                            <xmax>21.43</xmax>
+                            <ymax>104.80</ymax>
+                        </bndbox>
+                    </object>
+                </annotation>
+        </td>
+    </tr>
 </table>
 
 Well there is difference right? 
