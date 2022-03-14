@@ -155,7 +155,6 @@ Let's compare our annotation file for the 2 datasets: </br>
             </bndbox>
         </object>
     </annotation>
-</br>
 </td>
 </tr>
 </table>
