@@ -46,7 +46,7 @@ This dataset consist of 2 classes: </br>
 unlike the licence_plate_detection which has only one class <b> Licence </b> </br>
 
 To handle this change in number of classes following changes must me made in:
-<b>custom.pbtxt</b></br>
+### custom.pbtxt
 Before:
 
     item
@@ -69,7 +69,7 @@ After:
     }
     
 Note: The number of item should match number of classes in your dataset with proper name. </br>
-<b>pipeline.config</b></br>
+### pipeline.config
 at line 3: <br>
 change
 
