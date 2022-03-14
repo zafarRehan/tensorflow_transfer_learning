@@ -20,3 +20,19 @@ The dataset I used here is from Kaggle https://www.kaggle.com/andrewmvd/car-plat
 
 The code is well-commented so each step is explained in comments in the code.
 
+</br>
+</br>
+
+## Training your own Model
+Our main goal here is to train our own Object Detection model with excellent performance and in no time.</br>
+
+First and foremost we need data to train our model on. You can download any annotated dataset from Kaggle, or <a href="https://towardsai.net/p/computer-vision/50-object-detection-datasets-from-different-industry-domains">here</a> or anywhere on the Internet.</br>
+
+You can create your own dataset for object detection for which you must have: </br>
+1. Atleat 300 to 400 images containing the object(s)
+2. Annotating tool to draw the bounding boxes of the object(s), for example: https://www.youtube.com/watch?v=Tlvy-eM8YO4 </br>
+
+## Changes to be made for Custom Training
+
+
+
