@@ -116,7 +116,7 @@ Let's compare our annotation file for the 2 datasets: </br>
     </annotation>      
 </td>   
 <td width=400>
-<b>2. Satellite Car Pool Dataset</b></br>
+<b>2. Satellite Car Pool Annotation File</b></br>
 
     <?xml version="1.0"?>
     <annotation>
