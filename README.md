@@ -35,7 +35,36 @@ You can create your own dataset for object detection for which you must have: </
 ## Changes to be made for Custom Training
 As the problem changes so does varoius other parameters.</br>
 
-In order to demonstrate the changes I will take another example to walk you through the changes to be made and the challenges that can be faced while doing them
+In order to demonstrate the changes I will take another example to walk you through the changes to be made and the challenges that can be faced while changin them.
 
 <b>Dataset Used : </b> https://www.kaggle.com/kbhartiya83/swimming-pool-and-car-detection
+
+This dataset consist of 2 classes: </br> 
+1. Car <br>
+2. Swimming Pool
+
+unlike the licence_plate_detection which has only one class <b> Licence </b> </br>
+
+To handle this change in number of classes following changes must me made in:
+<b>custom.pbtxt</b>
+Before:
+
+    item
+    {
+    id :1
+    name :'licence'
+    }
+
+After:
+
+    item
+    {
+    id :1
+    name :'car'
+    }
+    item
+    {
+    id: 2
+    name: 'pool'
+    }
 
