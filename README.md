@@ -259,9 +259,19 @@ to
 for the same reason</li>
 </ul>
 </br>
+</br>
+
+### Directory Changes
+Some source directory needs to be changed depending upon the source of training images which can be easily figured out when some error will be shown in Colab
+</br></br>
+
+### Running the Code
+After making all these changes we are good to go and can proceed to run the code without issues. </br>
+
+I made the exact same changes and prepared another Colab notebook for the above dataset here: <a href="/satellite_car_pool.ipynb">satellite_car_pool.ipynb</a>
 
 
-   
+
 
 
     
