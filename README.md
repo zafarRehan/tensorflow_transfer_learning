@@ -136,7 +136,7 @@ Let's compare our annotation file for the 2 datasets: </br>
 </td>   
 <td width=400>
 <b>2. Satellite Car Pool Annotation File</b></br>
-
+    
     <?xml version="1.0"?>
     <annotation>
         <filename>000000001.jpg</filename>
@@ -204,7 +204,7 @@ To handle these changes following code were changed: </br>
  ```
 
 <b>To</b>
-
+```python
     import os
     import glob
     import pandas as pd
@@ -229,5 +229,5 @@ To handle these changes following code were changed: </br>
         column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
         xml_df = pd.DataFrame(xml_list, columns=column_name)
         return xml_df
-
+```
 
