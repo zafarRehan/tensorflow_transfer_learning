@@ -46,25 +46,36 @@ This dataset consist of 2 classes: </br>
 unlike the licence_plate_detection which has only one class <b> Licence </b> </br>
 
 To handle this change in number of classes following changes must me made in:
-<b>custom.pbtxt</b>
+<b>custom.pbtxt</b></br>
 Before:
 
     item
     {
-    id :1
-    name :'licence'
+        id :1
+        name :'licence'
     }
 
 After:
 
     item
     {
-    id :1
-    name :'car'
+        id :1
+        name :'car'
     }
     item
     {
-    id: 2
-    name: 'pool'
+        id: 2
+        name: 'pool'
     }
+    
+Note: The number of item should match number of classes in your dataset with proper name. </br>
+<b>pipeline.config</b></br>
+at line 3: <br>
+change
 
+    num_classes: 1
+to
+
+    num_classes: 2
+    
+Note: The value of num_classes must be equal to number of classes / different objects to be detected in your dataset. (Here: 'Car', 'Pool').</br>
