@@ -45,7 +45,7 @@ This dataset consist of 2 classes: </br>
 
 unlike the licence_plate_detection which has only one class <b> Licence </b> </br>
 
-To handle this change in number of classes following changes must me made in:
+To handle this change in number of classes following changes must me made in: </br>
 ### custom.pbtxt
 <table>
 <tr>
