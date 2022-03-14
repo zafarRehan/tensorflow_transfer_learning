@@ -86,7 +86,7 @@ Note: The value of num_classes must be equal to number of classes / different ob
 The annotation files can be different for different datasets or your own created annotation.
 Let's compare our annotation file for the 2 datasets:
 
-<b>1. Licence Plate Annotation File</b></br>
+<b>1. Licence Plate Annotation File</b>
    
     <annotation>
         <folder>images</folder>
