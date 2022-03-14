@@ -230,4 +230,4 @@ To handle these changes following code were changed: </br>
         xml_df = pd.DataFrame(xml_list, columns=column_name)
         return xml_df
 ```
-
+Basically ```python int(member[5][1].text)``` is changed to ```python int(float(member[1][0].text))``` </br>
