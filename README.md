@@ -171,5 +171,68 @@ Let's compare our annotation file for the 2 datasets: </br>
 </tr>
 </table>
 
-Well there is difference right? 
+Well there is difference right? </br>
+To handle these changes following code were changed: </br>
+1. In the notebook this code block was changed
+
+<table>
+<tr>
+<td width=400>
+<b>From</b>
+
+    import os
+    import glob
+    import pandas as pd
+    import xml.etree.ElementTree as ET
+
+    def xml_to_csv(path):
+        xml_list = []
+        for xml_file in glob.glob(path + '/*.xml'):
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
+            for member in root.findall('object'):
+                value = (root.find('filename').text,
+                         int(root.find('size')[0].text),
+                         int(root.find('size')[1].text),
+                         member[0].text,
+                         int(member[5][0].text),
+                         int(member[5][1].text),
+                         int(member[5][2].text),
+                         int(member[5][3].text)
+                         )
+                xml_list.append(value)
+        column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
+        xml_df = pd.DataFrame(xml_list, columns=column_name)
+        return xml_df     
+</td>   
+<td width=400>
+<b>To</b>
+
+    import os
+    import glob
+    import pandas as pd
+    import xml.etree.ElementTree as ET
+
+    def xml_to_csv(path):
+        xml_list = []
+        for xml_file in glob.glob(path + '/*.xml'):
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
+            for member in root.findall('object'):
+                value = (root.find('filename').text,
+                         int(root.find('size')[0].text),
+                         int(root.find('size')[1].text),
+                         member[0].text,
+                         int(float(member[1][0].text)),
+                         int(float(member[1][1].text)),
+                         int(float(member[1][2].text)),
+                         int(float(member[1][3].text))
+                         )
+                xml_list.append(value)
+        column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
+        xml_df = pd.DataFrame(xml_list, columns=column_name)
+        return xml_df
+</td>
+</tr>
+</table>
 
