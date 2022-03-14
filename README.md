@@ -173,7 +173,7 @@ Let's compare our annotation file for the 2 datasets: </br>
 
 Well there is difference right? </br>
 To handle these changes following code were changed: </br>
-1. In the notebook this code block was changed
+#### 1. In the notebook this code block was changed
 
 <b>From</b>
 ```python
@@ -232,9 +232,11 @@ To handle these changes following code were changed: </br>
 ```
 Basically ```   int(member[5][1].text)  ``` is changed to ```   int(float(member[1][0].text))   ``` </br>
 The reason is: </br></br>
-In licence_detection annotation file the <bndbox> element was present at <b><i>sixth</i></b> position inside <object> element, whereas in the other annotation file it is present in <strong><i>second</i></strong> position </br>
+In licence_detection annotation file the <bndbox> element was present at <b><i>sixth</i></b> position inside <object> element, whereas in the other annotation file it is present in <b><i>second</i></b> position </br>
     
-In In licence_detection annotation file the contents of <bndbox> element were of <b>int</b> type whereas in the other one it is of <b>float</b> type. </br>
+In In licence_detection annotation file the contents of <bndbox> element were of <b><i>int</i></b> type whereas in the other one it is of <b><i>float</i></b> type. </br>
+    
+
     
 
     
