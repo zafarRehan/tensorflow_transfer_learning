@@ -121,8 +121,7 @@ Let's compare our annotation file for the 2 datasets: </br>
             
             
             
-    </td>
-        
+    </td>   
     <td>
 <b>2. Satellite Car Pool Dataset</b></br>
 
