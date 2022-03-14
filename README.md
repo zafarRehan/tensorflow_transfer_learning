@@ -231,8 +231,8 @@ To handle these changes following code were changed: </br>
         return xml_df
 ```
 Basically ```   int(member[5][1].text)  ``` is changed to ```   int(float(member[1][0].text))   ``` </br>
-The reason is: </br>
-In licence_detection annotation file the <bndbox> element was present at <b>sixth</b> position inside <object> element, whereas in the other annotation file it is present in <b>second</b> position </br>
+The reason is: </br></br>
+In licence_detection annotation file the <bndbox> element was present at <b><i>sixth</i></b> position inside <object> element, whereas in the other annotation file it is present in <b><i>second</i></b> position </br>
     
 In In licence_detection annotation file the contents of <bndbox> element were of <b>int</b> type whereas in the other one it is of <b>float</b> type. </br>
     
