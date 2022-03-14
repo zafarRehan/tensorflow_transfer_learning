@@ -176,7 +176,7 @@ To handle these changes following code were changed: </br>
 1. In the notebook this code block was changed
 
 <b>From</b>
-
+```python
     import os
     import glob
     import pandas as pd
@@ -200,7 +200,8 @@ To handle these changes following code were changed: </br>
                 xml_list.append(value)
         column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
         xml_df = pd.DataFrame(xml_list, columns=column_name)
-        return xml_df     
+        return xml_df  
+ ```
 
 <b>To</b>
 
