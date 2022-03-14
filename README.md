@@ -47,6 +47,9 @@ unlike the licence_plate_detection which has only one class <b> Licence </b> </b
 
 To handle this change in number of classes following changes must me made in:
 ### custom.pbtxt
+<table>
+<tr>
+<td width=400>
 Before:
 
     item
@@ -54,7 +57,8 @@ Before:
         id :1
         name :'licence'
     }
-
+</td>
+<td width=400>
 After:
 
     item
@@ -68,13 +72,12 @@ After:
         name: 'pool'
     }
     
+</td>
+</tr>
+</table>
 Note: The number of item should match number of classes in your dataset with proper name. </br>
 ### pipeline.config
-at line 3 change:<br>
-| change | to |
-| --------------- | --------------- |
-| num_classes: 1 | num_classes: 2 | 
-
+at line 3:<br>
 change
 
     num_classes: 1
