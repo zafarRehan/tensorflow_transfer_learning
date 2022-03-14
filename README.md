@@ -232,7 +232,7 @@ To handle these changes following code were changed: </br>
 ```
 Basically ```   int(member[5][1].text)  ``` is changed to ```   int(float(member[1][0].text))   ``` </br>
 The reason is: </br></br>
-In licence_detection annotation file the <bndbox> element was present at <b><i>sixth</i></b> position inside <object> element, whereas in the other annotation file it is present in <b><i>second</i></b> position </br>
+In licence_detection annotation file the <bndbox> element was present at <b><i>sixth</i></b> position inside <object> element, whereas in the other annotation file it is present in <strong><i>second</i></strong> position </br>
     
 In In licence_detection annotation file the contents of <bndbox> element were of <b>int</b> type whereas in the other one it is of <b>float</b> type. </br>
     
