@@ -30,9 +30,9 @@ First and foremost we need data to train our model on. You can download any anno
 
 You can create your own dataset for object detection for which you must have: </br>
 1. Atleat 300 to 400 images containing the object(s)
-2. Annotating tool to draw the bounding boxes of the object(s), for example: https://www.youtube.com/watch?v=Tlvy-eM8YO4 </br>
+2. Annotating tool to draw the bounding boxes of the object(s), for example: https://www.youtube.com/watch?v=Tlvy-eM8YO4 (Recommended)</br></br>
 
 ## Changes to be made for Custom Training
+As the problem changes so does varoius other parameters.</br>
 
-
-
+In order to 
