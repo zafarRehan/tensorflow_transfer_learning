@@ -84,12 +84,12 @@ Note: The number of item should match number of classes in your dataset with pro
 at line 3:</br>
 <table>
 <tr>
-<td>
+<td width=400>
 change
 
     num_classes: 1
 </td>
-<td>
+<td width=400>
 to
 
     num_classes: 2
