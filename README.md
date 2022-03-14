@@ -80,7 +80,7 @@ After:
 </tr>
 </table>
 Note: The number of item should match number of classes in your dataset with proper name. </br>
-<h3>pipeline.config </h3></br>
+<h3>pipeline.config </h3>
 at line 3:</br>
 change
 
@@ -97,7 +97,7 @@ Note: The value of num_classes must be equal to number of classes / different ob
 The annotation files can be different for different datasets or your own created annotation.
 Let's compare our annotation file for the 2 datasets: </br>
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width=400>
 <b>1. Licence Plate Annotation File</b>
