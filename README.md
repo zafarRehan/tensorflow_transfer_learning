@@ -88,7 +88,7 @@ Let's compare our annotation file for the 2 datasets: </br>
 
 <table>
 <tr>
-<td>
+<td width=400>
 <b>1. Licence Plate Annotation File</b>
 
     <annotation>
@@ -115,7 +115,7 @@ Let's compare our annotation file for the 2 datasets: </br>
         </object>
     </annotation>      
 </td>   
-<td>
+<td width=400>
 <b>2. Satellite Car Pool Dataset</b></br>
 
     <?xml version="1.0"?>
