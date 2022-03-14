@@ -236,10 +236,20 @@ The reason is: </br></br>
 
 In licence_detection annotation file the "<bndbox>" element was present at <b><i>sixth</i></b> position inside "<object>" element, whereas in the other annotation file it is present in <b><i>second</i></b> position </br>
     
-In In licence_detection annotation file the contents of "<bndbox>" element were of <b><i>int</i></b> type whereas in the other one it is of <b><i>float</i></b> type. </br></br>
+In licence_detection annotation file the contents of "<bndbox>" element were of <b><i>int</i></b> type whereas in the other one it is of <b><i>float</i></b> type. </br></br>
 
     
-#### In create_tfrecords.py </br>
+#### In create_tfrecords.py 
+
+Added dict at line: 32 ```index_to_label =    {1: 'car', 2:'pool'}``` because unlike in the licence_detect annotation file we dont have class name as text in here so we need to change it to text from int</br>
+
+Changed line: 66 
+from 
+```classes_text.append(row['class'].encode('utf8'))```
+to
+```classes_text.append(index_to_label[row['class']].encode('utf8'))```
+
+for the same reason
 
 
     
