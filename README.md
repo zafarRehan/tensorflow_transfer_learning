@@ -243,12 +243,12 @@ The reason is: </br></br>
     
 #### 2. In create_tfrecords.py 
 
-<ul><li>Added dict at line: 32 
+<ul><li>Added dict at line: 32 </br>
     
-        index_to_label = {1: 'car', 2:'pool'}
+    index_to_label = {1: 'car', 2:'pool'}
 because unlike in the licence_detect annotation file we dont have class name as text in here so we need to change it to text from int</li>
 
-<li>Changed line: 66 
+<li>Changed line: 66</br> 
 from 
     
     classes_text.append(row['class'].encode('utf8'))
@@ -258,7 +258,9 @@ to
 
 for the same reason</li>
 </ul>
-    
+</br>
+
+
    
 
 
