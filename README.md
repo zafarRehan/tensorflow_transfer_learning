@@ -113,14 +113,7 @@ Let's compare our annotation file for the 2 datasets: </br>
                 <ymax>193</ymax>
             </bndbox>
         </object>
-    </annotation>
-            
-            
-            
-            
-            
-            
-            
+    </annotation>      
     </td>   
     <td>
 <b>2. Satellite Car Pool Dataset</b></br>
