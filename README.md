@@ -70,7 +70,11 @@ After:
     
 Note: The number of item should match number of classes in your dataset with proper name. </br>
 ### pipeline.config
-at line 3: <br>
+at line 3 change:<br>
+| change | to |
+| --------------- | --------------- |
+| num_classes: 1 | num_classes: 2 | 
+
 change
 
     num_classes: 1
