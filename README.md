@@ -241,11 +241,11 @@ The reason is: </br></br>
 </ul>
 </br></br>
     
-#### In create_tfrecords.py 
+#### 2. In create_tfrecords.py 
 
-Added dict at line: 32 ```index_to_label =    {1: 'car', 2:'pool'}``` because unlike in the licence_detect annotation file we dont have class name as text in here so we need to change it to text from int</br>
+<ul><li>Added dict at line: 32 ```index_to_label =    {1: 'car', 2:'pool'}``` because unlike in the licence_detect annotation file we dont have class name as text in here so we need to change it to text from int</li>
 
-Changed line: 66 
+<li>Changed line: 66 
 from 
     
     classes_text.append(row['class'].encode('utf8'))
@@ -253,9 +253,8 @@ to
 
     classes_text.append(index_to_label[row['class']].encode('utf8'))
 
-for the same reason
-
-
+for the same reason</li>
+</ul>
     
    
 
