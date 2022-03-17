@@ -312,7 +312,7 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
     
 <li>total_steps and warmup_steps: I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
     
-If you want In-depth knowledge of each configuration in pipeline.config <a href="https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment"> Here it is </a>
+</br>If you want In-depth knowledge of each configuration in pipeline.config <a href="https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment"> Here it is </a>
     
 </br></br>
 ## Choosing your model
