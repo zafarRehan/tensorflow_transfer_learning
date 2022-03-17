@@ -22,7 +22,7 @@ The code is well-commented so each step is explained in comments in the code.
 
 </br>
 ### Output
-<img src="/images/out1.png" width=450/>
+<img src="/images/out1.png" width=600/>
 
 </br>
 </br>
