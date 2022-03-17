@@ -312,10 +312,10 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
     
 <li>total_steps and warmup_steps: I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
     
-If you want In-depth knowledge of each configuration in pipeline.config <a href"https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment"> Here it is </a>
+If you want In-depth knowledge of each configuration in pipeline.config <a href="https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment"> Here it is </a>
     
 </br></br>
-### Choosing your model
+## Choosing your model
 Choice of model to perform transfer learning upon is the key for best results. </br>
 Our data here was an average of 400px X 400px in licence dataset wheraes it was 224px X 224px for satellite_car_pool dataset. The base model I chose here was trained on images resized to 320px X 320px so this was perfect for their training.</br>
 
