@@ -290,7 +290,7 @@ Here 1 = Car, 2 = Pool
 As can be seen above there are 11069 marked Cars in the training dataset whereas only 2677 Pools and this is called as <a href="https://www.analyticsvidhya.com/blog/2021/06/5-techniques-to-handle-imbalanced-data-for-a-classification-problem/">Imbalanced Dataset</a>. Though it is not a severe case of imbalance here are an article on <a href="https://towardsdatascience.com/having-an-imbalanced-dataset-here-is-how-you-can-solve-it-1640568947eb">how you can fix it.</a> 
 </br></br>
 
-### Additional Changes / Tuning
+## Additional Changes / Tuning
 Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which decides a model's configuration. Every model downloaded from <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md">Model Zoo</a> will have this file which can be edited to re-train the model as required.
 
 <ul>
