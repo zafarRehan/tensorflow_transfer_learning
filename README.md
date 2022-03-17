@@ -21,7 +21,7 @@ The dataset I used here is from Kaggle https://www.kaggle.com/andrewmvd/car-plat
 The code is well-commented so each step is explained in comments in the code.
 
 </br>
-### Output
+<h3>Output</h3>
 <img src="/images/out1.png" width=600/>
 
 </br>
