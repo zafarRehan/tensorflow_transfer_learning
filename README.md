@@ -312,7 +312,7 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
     
 <li>total_steps and warmup_steps: I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
     
-If you want In-depth knowledge of each configuration in pipeline.config <a href"https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment">Here it is</a>
+If you want In-depth knowledge of each configuration in pipeline.config <a href"https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment"> Here it is </a>
     
 </br></br>
 ### Choosing your model
@@ -323,7 +323,7 @@ Now suppose you want to train a dataset of high res images say 1920px X 1080px. 
 </br>When you go to the Model Zoo every model has their size written with their name. Choose the nearest one to your dataset average size.
 
 
-<h3 align=center>Thats all folks, train your first Model!!</h3>
+<h3 align=center>Thats all folks, go ahead and train your first Model!!</h3>
 
     
     
