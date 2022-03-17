@@ -310,7 +310,7 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
                         total_steps: 5000
                         warmup_steps: 1000
     }
-<li>batch_size :  This value is often the value of 2 to the nth power as is customary in the field of machine learning. And, the larger this value is, the more load is applied during learning, and depending on the environment, the process may die and not learn. The more the value the more RAM it will consume. </li>
+<li><h4>batch_size</h4> :  This value is often the value of 2 to the nth power as is customary in the field of machine learning. And, the larger this value is, the more load is applied during learning, and depending on the environment, the process may die and not learn. The more the value the more RAM it will consume. </li>
     
 <li>num_steps : The number of steps to learn. More the value better the model will train and more is the time required for training</li>
     
