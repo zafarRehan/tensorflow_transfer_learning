@@ -21,6 +21,10 @@ The dataset I used here is from Kaggle https://www.kaggle.com/andrewmvd/car-plat
 The code is well-commented so each step is explained in comments in the code.
 
 </br>
+### Output
+<img src="/images/out1.png" width=450/>
+
+</br>
 </br>
 
 ## Training your own Model
