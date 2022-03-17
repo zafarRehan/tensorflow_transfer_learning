@@ -274,8 +274,28 @@ I made the exact same changes and prepared another Colab notebook for the above 
 <p><img src="/images/out2.png" width=300/>        <img src="/images/out3.png" width=300/></p>
 
 
+The detection is not that good but also remember that this is the result of just an hour of training and also, you can see cars are getting detected pretty well but pools aren't. The reason being that the number of images with Pool is far less than images with Cars
 
+    train['class'].value_counts()
+    
+    Output:
+    1    11069
+    2     2677
+    Name: class, dtype: int64
+Here 1 = Car, 2 = Pool
+As can be seen above there are 11069 marked Cars in the training dataset whereas only 2677 Pools and this is called as <a href="https://www.analyticsvidhya.com/blog/2021/06/5-techniques-to-handle-imbalanced-data-for-a-classification-problem/">Imbalanced Dataset</a>. Though it is not a severe case of imbalance here are an article on <a href="https://towardsdatascience.com/having-an-imbalanced-dataset-here-is-how-you-can-solve-it-1640568947eb">how you can fix it.</a> 
+</br></br>
 
+### Additional Changes / Tuning
+Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which decides a model's configuration. Every model downloaded from <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md">Model Zoo</a> will have this file which can be edited to re-train the model as required.
+
+<ul>
+    
+    model {
+    ssd {
+        num_classes: 1
+<li>num_classes : It is a setting of the number to classify. It is written relatively at the top of the config file.</li>
+    
 
     
     
