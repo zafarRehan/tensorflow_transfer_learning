@@ -262,13 +262,16 @@ for the same reason</li>
 </br>
 
 ### Directory Changes
-Some source directory needs to be changed depending upon the source of training images which can be easily figured out when some error will be shown in Colab
+Some source directory needs to be changed depending upon the folder structure of training data images which can be easily figured out when some error will be shown in Colab
 </br></br>
 
 ### Running the Code
 After making all these changes we are good to go and can proceed to run the code without issues. </br>
 
 I made the exact same changes and prepared another Colab notebook for the above dataset here: <a href="/satellite_car_pool.ipynb">satellite_car_pool.ipynb</a>
+
+### Result of training
+<p><img src="/images/out2.png" width=300/><img src="/images/out3.png" width=300/></p>
 
 
 
