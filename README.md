@@ -295,8 +295,27 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
     ssd {
         num_classes: 1
 <li>num_classes : It is a setting of the number to classify. It is written relatively at the top of the config file.</li>
+ 
+    train_config: {
+        batch_size: 32
+        num_steps: 5000
+        optimizer {
+            momentum_optimizer: {
+                learning_rate: {
+                    cosine_decay_learning_rate {
+                        total_steps: 5000
+                        warmup_steps: 1000
+        fine_tune_checkpoint: "./object_detection/ssd_mobilenet_v3_large_coco/model.ckpt"
+    }
+<li>batch_size :  This value is often the value of 2 to the nth power as is customary in the field of machine learning. And, the larger this value is, the more load is applied during learning, and depending on the environment, the process may die and not learn. The more the value the more RAM it will consume. </li>
     
+<li>num_steps : The number of steps to learn. The number of steps can also be specified in the command when performing learning, As far as I've tried, the command specification takes precedence.</li>
+    
+<li>total_steps and warmup_steps: I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
 
+
+    
+    
     
     
     
