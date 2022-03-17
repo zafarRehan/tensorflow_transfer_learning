@@ -298,7 +298,7 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
     model {
     ssd {
         num_classes: 1
-<li>num_classes : It is a setting of the number to classify. It is written relatively at the top of the config file.</li>
+<li><h4>num_classes :</h4> It is a setting of the number to classify. It is written relatively at the top of the config file.</li>
  
     train_config: {
         batch_size: 32
@@ -310,11 +310,11 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
                         total_steps: 5000
                         warmup_steps: 1000
     }
-<li><h4>batch_size</h4> :  This value is often the value of 2 to the nth power as is customary in the field of machine learning. And, the larger this value is, the more load is applied during learning, and depending on the environment, the process may die and not learn. The more the value the more RAM it will consume. </li>
+<li><h4>batch_size :</h4>  This value is often the value of 2 to the nth power as is customary in the field of machine learning. And, the larger this value is, the more load is applied during learning, and depending on the environment, the process may die and not learn. The more the value the more RAM it will consume. </li>
     
-<li>num_steps : The number of steps to learn. More the value better the model will train and more is the time required for training</li>
+<li><h4>num_steps :</h4> The number of steps to learn. More the value better the model will train and more is the time required for training</li>
     
-<li>total_steps and warmup_steps: I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
+<li><h4>total_steps and warmup_steps :</h4> I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
     
 </br>If you want In-depth knowledge of each configuration in pipeline.config <a href="https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment"> Here it is </a>
     
