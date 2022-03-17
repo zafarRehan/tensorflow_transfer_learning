@@ -305,14 +305,25 @@ Remember <a href="/pipeline.config">pipeline.config</a>? This is the file which 
                     cosine_decay_learning_rate {
                         total_steps: 5000
                         warmup_steps: 1000
-        fine_tune_checkpoint: "./object_detection/ssd_mobilenet_v3_large_coco/model.ckpt"
     }
 <li>batch_size :  This value is often the value of 2 to the nth power as is customary in the field of machine learning. And, the larger this value is, the more load is applied during learning, and depending on the environment, the process may die and not learn. The more the value the more RAM it will consume. </li>
     
-<li>num_steps : The number of steps to learn. The number of steps can also be specified in the command when performing learning, As far as I've tried, the command specification takes precedence.</li>
+<li>num_steps : The number of steps to learn. More the value better the model will train and more is the time required for training</li>
     
 <li>total_steps and warmup_steps: I am investigating because it is an item that was not in the config of other models, total_steps must be greater than or equal to warmup_steps. (If this condition is not met, an error will occur and learning will not start.)</li>
+    
+If you want In-depth knowledge of each configuration in pipeline.config <a href"https://neptune.ai/blog/tensorflow-object-detection-api-best-practices-to-training-evaluation-deployment">Here it is</a>
+    
+</br></br>
+### Choosing your model
+Choice of model to perform transfer learning upon is the key for best results. </br>
+Our data here was an average of 400px X 400px in licence dataset wheraes it was 224px X 224px for satellite_car_pool dataset. The base model I chose here was trained on images resized to 320px X 320px so this was perfect for their training.</br>
 
+Now suppose you want to train a dataset of high res images say 1920px X 1080px. Training them on a model trained with 320X320 wont give excellent results.
+</br>When you go to the Model Zoo every model has their size written with their name. Choose the nearest one to your dataset average size.
+
+
+<h3 align=center>Thats all folks, train your first Model!!</h3>
 
     
     
