@@ -271,7 +271,7 @@ After making all these changes we are good to go and can proceed to run the code
 I made the exact same changes and prepared another Colab notebook for the above dataset here: <a href="/satellite_car_pool.ipynb">satellite_car_pool.ipynb</a>
 
 ### Result of training
-<p><img src="/images/out2.png" width=300/><img src="/images/out3.png" width=300/></p>
+<p><img src="/images/out2.png" width=300/>        <img src="/images/out3.png" width=300/></p>
 
 
 
